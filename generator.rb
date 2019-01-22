@@ -7,19 +7,24 @@ def run_generator
   puts "What is the first word to combine?"
 
   a = gets.chomp
-  while a.downcase!.length < 2
-    puts "a"
+
+  while a.length < 2
+    puts "Please enter a word greater than 1 character long"
     a = gets.chomp
   end
+
+  a.downcase!
 
   puts "What is the second word to combine?"
 
   b = gets.chomp
 
-  while b.downcase!.length < 2
-    puts "b"
+  while b.length < 2
+    puts "Please enter a word greater than 1 character long"
     b = gets.chomp
   end
+
+  b.downcase!
 
   a_array = a.split("")
 
