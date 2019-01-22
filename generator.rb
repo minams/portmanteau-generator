@@ -56,5 +56,5 @@ should_run = true
 while (should_run)
   run_generator
   puts "continue?"
-  should_run = gets.chomp == "y"
+  should_run = gets.chomp == "yes"
 end
