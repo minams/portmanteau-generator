@@ -155,10 +155,12 @@ Edge cases:
 
 | Input Word A | Input Word B | Output | Description
 |---|---|---|---|
-| 1111 | 2222 | 11112222
-| !!!! | @@@@ | !!!!@@@@
-| dog | !!!! | d!!!!
-| !!!! | dog | !!!!og
+| 1111 | 2222 | 11112222 | both inputs are digits
+| !!!! | @@@@ | !!!!@@@@ | both inputs are symbols
+| dog | !!!! | d!!!! | second input is entirely non-letter characters
+| !!!! | dog | !!!!og | first input is entirely non-letter characters
+| dog | c!a!t | da!t | second input is combination of letter and non-letter characters
+| d!o!g | cat | d!at | first input is a combination of letter and non-letter characters
 
 Any set of inputs/output not covered in this table is not required to implement/or has no specific requirement of how to handle.
 
