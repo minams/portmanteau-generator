@@ -38,12 +38,13 @@ You should write your program as a series of statements within a file `generator
 When a user runs this program, the program should politely ask the user for the following things:
 
 1. a word to combine to begin the portmanteau
-1. a second word to combine and begin the portmanteau
+1. a second word to combine and end the portmanteau
 
 Then, the program should use the two input words in to output and display the result of the following rules and create one portmanteau.
 
 Here is an example of what your program could look like. It is not required to look exactly like this:
-![example screenshot of a calculator proram](example.png)
+
+![example screenshot of a finished portmanteau generator program](./images/example-result.png)
 
 ### Wave 1
 
@@ -63,6 +64,8 @@ Make sure you save these inputs into variables. Then, output these variables by 
 Then, _call_ or _invoke_ the `run_generator` outside of the method definition, at the bottom of the `generator.rb` file.
 
 Confirm that this is all setup by running `$ ruby generator.rb`, and make sure you can input two words, and you eventually see the statement `"in the run_generator method"` in the console.
+
+![example screenshot of an in-process portmanteau generator program](./images/example-wave-1.png)
 
 #### `is_vowel?` method
 
@@ -96,12 +99,14 @@ Implement these rules:
 
 #### Input validation rules
 
-- The input for the first word must be at least two characters. If the input is less than 2 characters (as in 0 or 1 characters), the program should handle it in the following method:
+- The input for the first word must be at least two characters. If the input is less than 2 characters (as in 0 or 1 characters), the program should handle it in the following procedure:
   - output a message to the command line that informs the user that the input was invalid and must be at least 2 characters
   - asks the user to re-enter the input for the same prompt
   - does this until the input is valid
   - uses the newer, valid input
 - The input for the second word must be at least two characters. Follow the same guidelines as for the first word
+
+![example screenshot of an in-process portmanteau generator program of validating > 1 char](./images/example-wave-2.png)
 
 There is no requirement that either input must have any specific number vowels or consonants to be valid.
 
@@ -113,7 +118,7 @@ There is no requirement that inputs must be upper or lowercase.
 - In the first word, find the last instance of a vowel. The first half of the portmanteau will keep every letter of the first word until and **excluding** its last vowel.
 
   For example, if the first word is `dreams`, then `a` is the last vowel in this word. The first part of the new portmanteau is `dre`, excluding the `a`
-- In the second word, find the first instance of a vowel. The second half of the portmanteau will keep every letter of the second word until and **including** its last vowel.
+- In the second word, find the first instance of a vowel. The second half of the portmanteau will keep every letter of the second word after and **including** its last vowel.
 
   For example, if the second word is `hopes`, then `o` is the first vowel in this word. The second part of the new portmanteau is `opes`, including the `o`
 - If there are no vowels found in the first word, _use every letter in the first word_ in the first part of the portmanteau.
