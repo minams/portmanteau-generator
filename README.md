@@ -99,13 +99,13 @@ In wave two, work on combining the first two input words using the rules below. 
 
 Before you start wave 2, do the following things:
 
-- Read through all of the rules in both groups
-- Write down any questions you have
-- Talk about the rules with someone around you
-- Ask for further clarification, if needed
-- Make a strategy. Break down parts. What rules translate into loops? What kind of loops? What rules translate into conditionals? What kinds of conditionals? Don't spend more than 15 minutes on this
-- Write pseudocode
-- Write code!
+1. Read through all of the rules in both groups
+1. Write down any questions you have
+1. Talk about the rules with someone around you
+1. Ask for further clarification, if needed
+1. Make a strategy. Break down the parts. What rules translate into loops? What kind of loops? What rules translate into conditionals? What kinds of conditionals? Don't spend more than 15 minutes on this, moving to the next step is usually more helpful
+1. Write pseudocode
+1. Write code!
 
 #### Input validation rules
 
