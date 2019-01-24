@@ -2,29 +2,23 @@ def is_vowel? letter
   return ["a", "e", "i", "o", "u"].include?(letter)
 end
 
+def get_input(message) {
+  puts message
+  input = gets.chomp
+
+  while input.length < 2
+    puts "Please enter a word greater than 1 character long"
+    input = gets.chomp
+  end
+
+  return input.downcase!
+}
+
 def run_generator
 
-  puts "What is the first word to combine?"
+  a = get_input("What is the first word to combine?")
 
-  a = gets.chomp
-
-  while a.length < 2
-    puts "Please enter a word greater than 1 character long"
-    a = gets.chomp
-  end
-
-  a.downcase!
-
-  puts "What is the second word to combine?"
-
-  b = gets.chomp
-
-  while b.length < 2
-    puts "Please enter a word greater than 1 character long"
-    b = gets.chomp
-  end
-
-  b.downcase!
+  b = get_input("What is the second word to combine?")
 
   a_array = a.split("")
 
