@@ -93,9 +93,19 @@ end
 
 ### Wave 2
 
-In wave two, work on combining the first two input words like portmanteau rules.
+In wave two, work on combining the first two input words using the rules below. They are broken up into the groups "Input validation rules" and "combination rules."
 
-Implement these rules:
+#### Before you start
+
+Before you start wave 2, do the following things:
+
+- Read through all of the rules in both groups
+- Write down any questions you have
+- Talk about the rules with someone around you
+- Ask for further clarification, if needed
+- Make a strategy. Break down parts. What rules translate into loops? What kind of loops? What rules translate into conditionals? What kinds of conditionals? Don't spend more than 15 minutes on this
+- Write pseudocode
+- Write code!
 
 #### Input validation rules
 
