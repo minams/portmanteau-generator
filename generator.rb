@@ -31,7 +31,7 @@ def run_generator
   a_vowel = ""
 
   a_array.each do | c |
-    if is_vowel? c
+    if is_vowel?(c)
       a_vowel = c
     end
   end
@@ -42,7 +42,7 @@ def run_generator
   b_vowel = ""
 
   b_array.reverse.each do | c |
-    if ["a", "e", "i", "o", "u"].include?(c)
+    if is_vowel?(c)
       b_vowel = c
     end
   end
