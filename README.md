@@ -72,6 +72,7 @@ Confirm that this is all setup by running `$ ruby generator.rb`, and make sure y
 Next, make a method named `is_vowel?`. This method should:
 - take in one argument, a string, which will represent one letter. Name this argument `letter`
 - return either `true` or `false`-- true if it is either the letters `a`, `e`, `i`, `o`, or `u`, false if it is anything else
+- be defined above the definition for the `run_generator` method, in the same `generator.rb` file
 
 Test that this method works by calling it inside of the `run_generator` method, and passing in some test cases, and printing the result to the console. Here is an example of what that might look like:
 
@@ -194,7 +195,7 @@ The following is a list of optionals. Should you be ambitious to continue workin
   - asks the user to re-enter the input for the same prompt
   - does this until the input is valid
   - uses the newer, valid input
-
+- Refactor more pieces of code into other helper methods
 
 Please note that you will only be graded on the requirements, and not on the optional enhancements.
 
