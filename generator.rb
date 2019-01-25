@@ -1,8 +1,4 @@
-def is_vowel? letter
-  return ["a", "e", "i", "o", "u"].include?(letter)
-end
-
-def get_input(message) {
+def get_input( message )
   puts message
   input = gets.chomp
 
@@ -11,43 +7,46 @@ def get_input(message) {
     input = gets.chomp
   end
 
-  return input.downcase!
-}
+  input.downcase!
+
+  return input
+end
+
+def is_vowel?( letter )
+  return ["a", "e", "i", "o", "u"].include?(letter)
+end
+
+def find_vowel( word )
+  vowel = ""
+
+  letter_array = word.split("")
+
+  letter_array.each do |letter|
+    if is_vowel?(letter)
+      vowel = letter
+    end
+  end
+
+  return vowel
+end
 
 def run_generator
 
-  a = get_input("What is the first word to combine?")
+  input_a = get_input("What is the first word to combine?")
 
-  b = get_input("What is the second word to combine?")
+  input_b = get_input("What is the second word to combine?")
 
-  a_array = a.split("")
+  input_a_vowel = find_vowel( input_a )
 
-  a_vowel = ""
+  input_b_vowel = find_vowel( input_b.reverse )
 
-  a_array.each do | c |
-    if is_vowel?(c)
-      a_vowel = c
-    end
-  end
+  a_rev = input_a.reverse
 
+  prefix = input_a_vowel.empty? ? input_a : a_rev.slice(a_rev.index(input_a_vowel) + 1, a_rev.length).reverse
 
-  b_array = b.split("")
+  suffix = input_b_vowel.empty? ? input_b : input_b.slice(input_b.index(input_b_vowel), input_b.length)
 
-  b_vowel = ""
-
-  b_array.reverse.each do | c |
-    if is_vowel?(c)
-      b_vowel = c
-    end
-  end
-
-  a_rev = a.reverse
-
-  first = a_vowel.empty? ? a : a_rev.slice(a_rev.index(a_vowel) + 1, a_rev.length).reverse
-
-  second = b_vowel.empty? ? b : b.slice(b.index(b_vowel), b.length)
-
-  puts "#{ a } + #{ b } is #{ first + second }"
+  puts "#{ input_a } + #{ input_b } is #{ prefix + suffix }"
 end
 
 should_run = true
