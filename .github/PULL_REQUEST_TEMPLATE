@@ -1,0 +1,12 @@
+# Portmanteau Generator
+Congratulations! You're submitting your assignment.
+
+## Comprehension Questions
+
+Question 	| Answer
+---	      | ---
+What went well in your code style, such as indentation, spacing, variable names, readability, etc.? What was lacking? |
+How did creating the `is_vowel?` method affect your project? |
+What was your strategy for getting the correct set of letters from the first word into the portmanteau? |
+What was your strategy for validating against inputs under 2 characters? |
+In the next project, what would you change about your process? What would you keep doing? |
