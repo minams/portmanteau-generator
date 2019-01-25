@@ -154,7 +154,7 @@ We are ignoring complex rules in this project, because languages are complex! Do
 | breakfast | lunch | breakfunch
 | aa | dog | aog | first is all vowels
 | dog | aa | daa | second is all vowels
-| xx | dog | xx | first is all consonants
+| xx | dog | xxog | first is all consonants
 | dog | xx | dxx | second is all consonants
 | aa | xx | axx | first is all vowels, second is all consonants
 | xx | aa | xxaa | first is all consonants, second is all vowels
