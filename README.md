@@ -3,7 +3,7 @@
 ## At a Glance
 
 - Individual, [stage 1](https://github.com/Ada-Developers-Academy/pedagogy/blob/master/rule-of-three.md#stage-1) project
-- Due before class, **Wed. Feb 6**
+- Due before class, **Fri. Feb 8**
 
 ## Introduction
 
@@ -104,6 +104,7 @@ Before you start wave 2, do the following things:
 1. Write down any questions you have
 1. Talk about the rules with someone around you
 1. Ask for further clarification, if needed
+1. Ruby has a great built-in way to iterate through characters in a String using the method named `each_char`. Read through the [documentation for `each_char`](https://ruby-doc.org/core-2.1.0/String.html#method-i-each_char), and work through some examples in `irb`. What does `"hello world".each_char {|letter| print "#{letter} :) " }` do?
 1. Make a strategy. Break down the parts. What rules translate into loops? What kind of loops? What rules translate into conditionals? What kinds of conditionals? Don't spend more than 15 minutes on this, moving to the next step is usually more helpful
 1. Write pseudocode
 1. Write code!
@@ -195,6 +196,7 @@ The following is a list of optionals. Should you be ambitious to continue workin
   - asks the user to re-enter the input for the same prompt
   - does this until the input is valid
   - uses the newer, valid input
+- There are other ways to iterate through strings letter-by-letter besides using `each_char`. Research other ways to do this, and refactor your code to use one of these ways
 - Refactor more pieces of code into other helper methods
 
 Please note that you will only be graded on the requirements, and not on the optional enhancements.
